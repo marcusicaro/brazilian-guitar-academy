@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -26,15 +24,15 @@ const HamburgerContainer = styled.div`
 `;
 
 const HeaderLinksMobile = styled.div`
-  width: 300px;
-  height: 100vh;
+  width: 100vw;
   display: none;
   flex-direction: column;
   transition: 1.5s;
   background-color: rgba(255, 255, 255, 0.5);
   position: fixed;
+  left: 0;
   top: 60px;
-  transform: translateX(${(props) => props.positionX + "%"});
+  transform: translateY(${(props) => props.positionY + "%"});
   @media (max-width: 768px) {
     display: flex;
   }
@@ -50,14 +48,16 @@ const HamburgerIconsDiv = styled.div`
 `;
 
 export default function Header() {
-  const [posX, setPosX] = useState(150);
-
-  const transformBottom = {
-    transform: `translate(-6px, -12px) rotate(45deg)`,
-  };
-  const transformTop = {
-    transform: `translate(-6px, 6px) rotate(-45deg)`,
-  };
+  const [posY, setPosY] = useState(-200);
+  const [transformBottom, setTransformBottom] = useState({
+    transform: 'none',
+  });
+  const [transformMiddle, setTransforMiddle] = useState({
+    opacity: 1
+  })
+  const [transformTop, setTransformTop] = useState({
+    transform: 'none',
+  });
 
   return (
     <HeaderContainer>
@@ -70,13 +70,31 @@ export default function Header() {
         <div>login</div>
       </HeaderLinks>
       <HamburgerContainer>
-        <div onClick={() => (posX === 150 ? setPosX(-50) : setPosX(150))}>
+        <div onClick={() => {
+          (posY === -200 ? setPosY(0) : setPosY(-200));
+          (transformBottom === {
+            transform: 'none',
+          } ? setTransformBottom({
+            transform: `translate(-6px, -12px) rotate(45deg)`,
+          }) : setTransformBottom({
+            transform: 'none',
+          }));
+          (transformTop === {
+            transform: 'none',
+          } ? setTransformTop({
+            transform: `translate(-6px, 6px) rotate(-45deg)`,
+          }) : setTransformTop({
+            transform: 'none',
+          }));
+          (transformMiddle === {opacity: 1} ? setTransforMiddle({opacity: 0}) : setTransforMiddle({opacity: 1}));
+          
+          }}>
           <HamburgerIconsDiv style={transformTop} />
-          <HamburgerIconsDiv className='barTwo' style={{ opacity: "0" }} />
+          <HamburgerIconsDiv className='barTwo' style={transformMiddle} />
           <HamburgerIconsDiv className='barThree' style={transformBottom} />
         </div>
 
-        <HeaderLinksMobile positionX={posX}>
+        <HeaderLinksMobile positionY={posY}>
           <div>courses</div>
           <div>book a lesson</div>
           <div>shop</div>
