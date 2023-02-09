@@ -50,13 +50,13 @@ const HamburgerIconsDiv = styled.div`
 export default function Header() {
   const [posY, setPosY] = useState(-200);
   const [transformBottom, setTransformBottom] = useState({
-    transform: 'none',
+    transform: "none",
   });
   const [transformMiddle, setTransforMiddle] = useState({
-    opacity: 1
-  })
+    opacity: 1,
+  });
   const [transformTop, setTransformTop] = useState({
-    transform: 'none',
+    transform: "none",
   });
 
   return (
@@ -70,25 +70,29 @@ export default function Header() {
         <div>login</div>
       </HeaderLinks>
       <HamburgerContainer>
-        <div onClick={() => {
-          (posY === -200 ? setPosY(0) : setPosY(-200));
-          (transformBottom === {
-            transform: 'none',
-          } ? setTransformBottom({
-            transform: `translate(-6px, -12px) rotate(45deg)`,
-          }) : setTransformBottom({
-            transform: 'none',
-          }));
-          (transformTop === {
-            transform: 'none',
-          } ? setTransformTop({
-            transform: `translate(-6px, 6px) rotate(-45deg)`,
-          }) : setTransformTop({
-            transform: 'none',
-          }));
-          (transformMiddle === {opacity: 1} ? setTransforMiddle({opacity: 0}) : setTransforMiddle({opacity: 1}));
-          
-          }}>
+        <div
+          onClick={() => {
+            posY === -200 ? setPosY(0) : setPosY(-200);
+            console.log(transformBottom);
+            transformBottom.transform === "none"
+              ? setTransformBottom({
+                  transform: `translate(0px, -12px) rotate(45deg)`,
+                })
+              : setTransformBottom({
+                  transform: "none",
+                });
+            transformTop.transform === "none"
+              ? setTransformTop({
+                  transform: `translate(0px, 6px) rotate(-45deg)`,
+                })
+              : setTransformTop({
+                  transform: "none",
+                });
+            transformMiddle.opacity === 1
+              ? setTransforMiddle({ opacity: 0 })
+              : setTransforMiddle({ opacity: 1 });
+          }}
+        >
           <HamburgerIconsDiv style={transformTop} />
           <HamburgerIconsDiv className='barTwo' style={transformMiddle} />
           <HamburgerIconsDiv className='barThree' style={transformBottom} />
