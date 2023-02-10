@@ -1,5 +1,10 @@
 import React from "react";
+import LatestLessons from "./LatestLessons";
 
 export default function Main() {
-  return <div>Main</div>;
+  return (
+    <div>
+      <LatestLessons />
+    </div>
+  );
 }

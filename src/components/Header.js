@@ -73,7 +73,6 @@ export default function Header() {
         <div
           onClick={() => {
             posY === -200 ? setPosY(0) : setPosY(-200);
-            console.log(transformBottom);
             transformBottom.transform === "none"
               ? setTransformBottom({
                   transform: `translate(0px, -12px) rotate(45deg)`,
