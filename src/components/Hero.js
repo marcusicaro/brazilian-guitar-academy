@@ -1,73 +1,74 @@
 import React from "react";
 import styled from "styled-components";
+import videoBg from "./videos/videoBg.mp4";
 
 const Button = styled.button`
-& {
-  width: 90px;
-  appearance: none;
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-}
+  & {
+    margin: 0 auto 0 auto;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 5px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(
+      45deg,
+      rgb(46, 164, 79) 25%,
+      rgb(80, 200, 100) 51%,
+      rgb(46, 164, 79) 100%
+    );
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
 
-&:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
+  &:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 
-&:hover {
-  background-color: #2c974b;
-}
-
-&:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-  outline: none;
-}
-
-&:disabled {
-  background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
-  cursor: default;
-}
-
-&:active {
-  background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-}
-`
+  &:active {
+    transform: scale(0.95);
+  }
+`;
 
 const HeroContainer = styled.div`
-max-height: 700px;
-display: grid;
-grid-template-columns: 1fr 1fr;
-justify-items: center;
-`
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  'Montserrat', sans-serif;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 650px) {
+    height: 350px;
+  }
+`;
 
 export default function Hero() {
-  return <HeroContainer>
-  <div></div>
-  <div>
-  <h2>BRAZILIAN GUITAR ACADEMY</h2>
-  <Button>Sign up</Button>
-  </div>
-  </HeroContainer>;
+  return (
+    <HeroContainer className='videoContainer'>
+      <video src={videoBg} autoPlay muted loop className='video' />
+      <div className='heroText'>
+        <h1 className='heroTitle' style={{ zIndex: 2 }}>
+          ONLINE <br /> BRAZILIAN <br /> GUITAR <br /> LESSONS
+        </h1>
+        <div className='heroSubtitle' style={{ fontWeight: "bold" }}>
+          WITH ROCHO
+        </div>
+        <div>
+          <br />
+          <Button>Sign up</Button>
+        </div>
+      </div>
+    </HeroContainer>
+  );
 }

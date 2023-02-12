@@ -1,4 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+/* header */
+.headerLink {
+  margin-left: 1em;
+  margin-right: 2em;
+  font-weight: 600;
+  border-bottom: 1px solid silver;
+}
+
+.heroTitle {
+  font-size: 45px;
+}
+
+.heroSubtitle {
+  font-size: 25px;
+}
+
+.iconHeader:hover {
+  color: rgb(46, 164, 79);
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  right: 10%;
+  padding: 2em;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: 10vw;
+}
+
+/* .videoContainer {
+  min-height: 400px;
+} */
+
+.videoContainer {
+  margin-top: 65px;
+}
+
+.videoContainer video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(83%);
+}
+
+/* n confiar codepen */
+
+@keyframes pop-word {
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bar-scale {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0);
+  }
+
+  60% {
+    transform: scale(1) translate(4px, 1px) rotate(8deg);
+  }
+
+  100% {
+    transform: scale(0) translate(4px, 1px) rotate(8deg);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    text-shadow: 0 0 8px red;
+  }
+}
+
+.aboutContainer {
+  margin: 25px 0 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
+}
+
+.aboutContent {
+  max-width: 875px;
+  padding: 2em;
+  padding-top: 1em;
+  display: flex;
+  height: 630px;
+}
+
+.insideBox {
+  background: linear-gradient(120deg, #ffffff 63%, rgb(46, 164, 79) 30%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aboutText {
+  width: 100%;
+}
+
+/* .aboutPicture {
+  width: 50%;
+} */
+
+/* .aboutPicture img {
+  width: 50%;
+} */
+
+.aboutPicture {
+  /* padding: 10px; */
+  background-origin: content-box;
+  background-image: url("./components/images/daninobg.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.titleAbout {
+  color: rgb(37, 43, 51);
+  font-size: 3.5rem;
+
+  line-height: 0.85;
+  perspective: 500px;
+}
+
+.word {
+  display: block;
+  margin: 10px;
+
+  animation: show 0.01s forwards, pop-word 1.5s forwards;
+  animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
+  opacity: 0;
+
+  transform: rotateX(120deg);
+  transform-origin: 50% 100%;
+}
+
+.word:nth-of-type(2) {
+  padding: 0 2rem;
+
+  animation-delay: 1.5s;
+
+  color: #2ea44f;
+}
+
+/* .superscript {
+  position: relative;
+  animation-delay: 3.6s;
+
+  animation-duration: 0.25s;
+  animation-name: shimmer;
+
+  vertical-align: text-top;
+} */
+
+/* bars */
+/* .superscript::before {
+  --bar-width: 25%;
+
+  position: absolute;
+
+  top: 37%;
+  left: 47%;
+  width: 14%;
+  height: 48%;
+
+  animation: bar-scale 0.25s linear 3s 1 forwards;
+
+  background: linear-gradient(
+    to right,
+    white var(--bar-width),
+    transparent var(--bar-width) calc(100% - var(--bar-width)),
+    white calc(100% - var(--bar-width))
+  );
+
+  content: "";
+
+  transform: scaleY(var(--bar-scale-y));
+} */
+
+/* sparkle */
+/* .superscript::after {
+  --size: 10rem;
+
+  position: absolute;
+
+  top: -5%;
+  left: -85%;
+
+  width: var(--size);
+  height: var(--size);
+
+  animation: sparkle 0.4s linear 3.5s 1 forwards;
+
+  background: radial-gradient(
+      circle at center,
+      rgb(252 249 241 / 94%) 0% 7%,
+      transparent 7% 100%
+    ),
+    conic-gradient(
+      transparent 0deg 18deg,
+      var(--sparkle-color) 18deg,
+      transparent 20deg 40deg,
+      var(--sparkle-color) 40deg,
+      transparent 43deg 87deg,
+      var(--sparkle-color) 87deg,
+      transparent 95deg 175deg,
+      var(--sparkle-color) 175deg,
+      transparent 178deg 220deg,
+      var(--sparkle-color) 220deg,
+      transparent 222deg 270deg,
+      var(--sparkle-color) 270deg,
+      transparent 275deg 300deg,
+      var(--sparkle-color) 300deg,
+      transparent 303deg 360deg
+    );
+
+  border-radius: 50%;
+  clip-path: polygon(
+    50% 0,
+    59.13% 26.64%,
+    85.13% -2.35%,
+    100% 50%,
+    50% 100%,
+    0 50%,
+    31.39% 34.86%
+  );
+
+  content: "";
+
+  filter: blur(1px);
+
+  transform: scale(0);
+} */
+
+@media screen and (max-width: 600px) {
+  .titleAbout {
+    font-size: 5rem;
+  }
+
+  /* sparkle */
+  /* .superscript::after {
+    --size: 6rem;
+  } */
+}
+
+@media screen and (max-width: 650px) {
+  .heroText {
+    justify-content: center;
+    height: 285px;
+  }
+  .videoContainer {
+    height: 350px;
+    margin-top: 65px;
+  }
+  .videoContainer video {
+    height: 350px;
+    width: auto;
+    object-fit: contain;
+    margin-left: -370px;
+  }
+  .heroTitle {
+    font-size: 35px;
+  }
+
+  .heroSubtitle {
+    font-size: 20px;
+  }
+
+  .heroText {
+    margin-right: auto;
+  }
 }
