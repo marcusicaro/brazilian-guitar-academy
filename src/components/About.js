@@ -4,8 +4,8 @@ export default function About() {
   return (
     <div className='aboutContainer'>
       <h1 className='titleAbout'>
-        <span className='word'>Know</span>
-        <span className='word'>More</span>
+        <span className='word'>About</span>
+        <span className='word'>Us</span>
       </h1>
       <div className='aboutContent'>
         <div className='insideBox'>
