@@ -261,6 +261,11 @@
   transform: scale(0);
 } */
 
+.cardIcon {
+  color: green;
+  font-size: 35px;
+}
+
 @media screen and (max-width: 600px) {
   .titleAbout {
     font-size: 5rem;

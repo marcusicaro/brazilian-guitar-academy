@@ -52,7 +52,7 @@ const CardOverlay = styled.div`
 const CardHeader = styled.div`
   z-index: 999;
   position: fixed;
-  width: 75%;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 1em;

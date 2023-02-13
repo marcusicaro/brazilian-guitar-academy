@@ -5,16 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const FooterContainer = styled.footer`
-  height: 50px;
+  height: 75px;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
   background: #121212;
-  padding: 2em;
+  // padding: 2em;
   justify-content: space-around;
-  @media (max-width: 768px) {
-    height: 75px;
-  }
 `;
 
 const Social = styled.div`
@@ -26,21 +23,27 @@ const Social = styled.div`
 
 const Links = styled.div`
   display: flex;
+  width: 400px;
   align-items: center;
-  gap: 20px;
+  justify-content: space-around;
+  // gap: 20px;
 `;
+
+const LinksText = styled.div`
+  cursor: pointer;
+`
 
 export default function Footer() {
   return (
     <FooterContainer>
       <Social style={{ fontSize: "25px", color: "#ffffff" }}>
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faWhatsapp} />
+        <FontAwesomeIcon style={{cursor: "pointer"}} icon={faInstagram} className='iconHeader' />
+        <FontAwesomeIcon style={{cursor: "pointer"}} icon={faWhatsapp} className='iconHeader' />
       </Social>
       <Links style={{ color: "#ffffff" }}>
-        <div>Terms of condition</div>
-        <div>Imprint</div>
-        <div>Terms & Conditions</div>
+        <LinksText>Terms of condition</LinksText>
+        <LinksText>Imprint</LinksText>
+        <LinksText>Terms & Conditions</LinksText>
       </Links>
     </FooterContainer>
   );
