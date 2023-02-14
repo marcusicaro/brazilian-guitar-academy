@@ -99,6 +99,7 @@
 }
 
 .aboutContainer {
+  overflow:hidden;
   padding-top: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -136,6 +137,7 @@
 } */
 
 .aboutPicture {
+  /* position: relative; */
   /* padding: 10px; */
   background-origin: content-box;
   background-image: url("./components/images/daninobg.png");

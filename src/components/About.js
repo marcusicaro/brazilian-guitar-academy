@@ -42,7 +42,7 @@ export default function About() {
           <motion.div
             initial={{ x: 100 }}
             whileInView={{ x: 0 }}
-            transition={{ type: "spring", duration: 1, bounce: 0.2 }}
+            transition={{ type: "spring", duration: 1, bounce: 0.3 }}
             className='aboutPicture'
           ></motion.div>
         </div>
