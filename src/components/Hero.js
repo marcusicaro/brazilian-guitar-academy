@@ -59,13 +59,13 @@ export default function Hero() {
       <video src={videoBg} autoPlay muted loop className='video' />
       <div className='heroText'>
         <h1 className='heroTitle' style={{ zIndex: 2 }}>
-          ONLINE <br /> BRAZILIAN <br /> GUITAR <br /> LESSONS
+          ONLINE <br /> BRAZILIAN <br /> GUITAR <br /> LESSONS <br />{" "}
+          <div className='heroSubtitle' style={{ fontWeight: "bold" }}>
+            WITH ROCHO
+          </div>
         </h1>
-        <div className='heroSubtitle' style={{ fontWeight: "bold" }}>
-          WITH ROCHO
-        </div>
+
         <div>
-          <br />
           <Button>Sign up</Button>
         </div>
       </div>
