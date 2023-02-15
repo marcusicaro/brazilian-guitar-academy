@@ -1,69 +1,129 @@
 .formContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(248, 249, 250);
-    padding: 2em;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 249, 250);
+  padding: 2em;
 }
 
 fieldset {
-    border: 2px groove rgba(162, 255, 162, 0.432);
-    border-radius: 15px;
-    background-color: white;
-    /* height: 100%; */
-    display: flex;
-    align-items: center;
+  border: 2px groove rgba(162, 255, 162, 0.432);
+  border-radius: 15px;
+  background-color: white;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
 }
 
 legend {
-    font-size: 23px;
-    color: rgb(37, 43, 51);
-    font-weight: bold;
+  font-size: 23px;
+  color: rgb(37, 43, 51);
+  font-weight: bold;
 }
 
 form {
-    max-width: 650px;
+  max-width: 650px;
+  position: relative;
 }
 
 input {
-    height: 35px;;
+  height: 35px;
 }
 
-input, textarea {
-    border: 2px groove rgba(192, 192, 192, 0.24);
-    padding: .5em;
-    background-color: rgb(248, 249, 250);
+input {
+  border: none;
+  border-bottom: 2px groove rgba(192, 192, 192, 0.24);
+  padding: 0.25em;
 }
 
-input:focus, textarea:focus {
-    outline: none;
-    background-color: white;
-    border: 2px groove rgba(162, 255, 162, 0.432);
+label {
+  position: absolute;
+  top: 0;
+  left: 0.25em;
+  padding: 10px 0;
+  font-size: 15px;
+  pointer-events: none;
+  transition: 0.35s ease-out;
+}
+
+input:focus + label,
+input:valid + label {
+  top: -22px;
+  left: 0.25em;
+  font-size: 12px;
+  color: #2ea44f;
+  transition: 0.35s ease-out;
+}
+
+input:valid {
+  border-bottom: 2px groove rgba(162, 255, 162, 0.432);
 }
 
 textarea {
-    min-height: 200px;
-    resize: vertical;
+  border: 2px groove rgba(192, 192, 192, 0.24);
+  padding: 0.5em;
+  background-color: white;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background-color: white;
+}
+
+textarea {
+  min-height: 175px;
+  resize: vertical;
+}
+
+textarea:valid {
+  border: 2px groove rgba(162, 255, 162, 0.432);
 }
 
 .green {
-    color: #2ea44f;
+  color: #2ea44f;
+}
+
+.formFieldContainer {
+  position: relative;
+}
+
+.message {
+  width: 100%;
 }
 
 .formField {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 2em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 2em;
 }
 
 .formTalk,
 .formEmail {
-    width: 250px;
+  width: 250px;
 }
 
 .formText {
-    width: 100%;
+  width: 100%;
+}
+
+.submitButton {
+  background: none;
+  color: #2ea44f;
+  border: 3px groove rgba(162, 255, 162, 0.432);
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-left: auto;
+  transition: 0.1s ease-out;
+}
+
+.submitButton:active {
+  transform: scale(0.95);
+  transition: 0.1s ease-out;
 }

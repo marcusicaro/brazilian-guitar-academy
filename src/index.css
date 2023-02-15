@@ -99,7 +99,7 @@
 }
 
 .aboutContainer {
-  overflow:hidden;
+  overflow: hidden;
   padding-top: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -120,6 +120,8 @@
 }
 
 .insideBox {
+  padding-left: 6em;
+  padding-right: 6em;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -129,7 +131,7 @@
 }
 
 /* .aboutPicture {
-  width: 50%;
+  width: 600px;
 } */
 
 /* .aboutPicture img {
@@ -137,11 +139,10 @@
 } */
 
 .aboutPicture {
-  /* position: relative; */
-  /* padding: 10px; */
   background-origin: content-box;
   background-image: url("./components/images/daninobg.png");
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -153,7 +154,6 @@
 .titleAbout {
   color: rgb(37, 43, 51);
   font-size: 3.5rem;
-
   line-height: 0.85;
   perspective: 500px;
 }
