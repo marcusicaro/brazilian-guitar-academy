@@ -116,7 +116,7 @@
   max-width: 1075px;
   padding-top: 1em;
   display: flex;
-  height: 630px;
+  height: auto;
 }
 
 .insideBox {
@@ -128,26 +128,72 @@
 
 .aboutText {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-/* .aboutPicture {
-  width: 600px;
+.aboutText button {
+  margin: 0 auto 0 auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(
+    45deg,
+    rgb(46, 164, 79) 25%,
+    rgb(80, 200, 100) 51%,
+    rgb(46, 164, 79) 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.aboutText button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.aboutText button:active {
+  transform: scale(0.95);
+}
+
+.imageContainer {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.imageContainer img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* @media screen and (min-width: 990px) {
+  .imageContainer img {
+    margin-top: -100px;
+    margin-left: 50px;
+  }
 } */
 
-/* .aboutPicture img {
-  width: 50%;
-} */
-
-.aboutPicture {
-  background-origin: content-box;
-  background-image: url("./components/images/daninobg.png");
-  background-size: contain;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
+@media screen and (min-width: 650px) {
+  .aboutPicture {
+    margin-top: -100px;
+    margin-left: 50px;
+  }
 }
 
 /* .aboutPicture:checked {

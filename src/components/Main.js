@@ -3,6 +3,7 @@ import About from "./About";
 import LatestLessons from "./LatestLessons";
 import Cards from "./Cards";
 import Form from "./Form";
+import FAQ from "./FAQ";
 
 export default function Main() {
   return (
@@ -11,6 +12,7 @@ export default function Main() {
       <Cards />
       {/* <LatestLessons /> */}
       <Form />
+      <FAQ />
     </div>
   );
 }

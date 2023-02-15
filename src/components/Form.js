@@ -20,7 +20,7 @@ export default function Form() {
             <label htmlFor='name'>Name:</label>
           </div>
           <div className='formFieldContainer'>
-            <input id='email' className='formEmail' type='text' required />
+            <input id='email' className='formEmail' type='email' required />
             <label htmlFor='email'>E-mail:</label>
           </div>
           <div className='formFieldContainer message'>
