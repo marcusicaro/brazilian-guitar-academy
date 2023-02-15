@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/brazilian-guitar-academy/static/css/main.fdd73b44.css",
-    "main.js": "/brazilian-guitar-academy/static/js/main.02a37c60.js",
+    "main.css": "/brazilian-guitar-academy/static/css/main.d634aec0.css",
+    "main.js": "/brazilian-guitar-academy/static/js/main.d6cb751e.js",
     "static/media/videoBg.mp4": "/brazilian-guitar-academy/static/media/videoBg.748a8b2c17172313c2a0.mp4",
     "static/media/daninobg.png": "/brazilian-guitar-academy/static/media/daninobg.b5af8d9bbda26a923f6d.png",
     "static/media/logo.png": "/brazilian-guitar-academy/static/media/logo.702e60b5ba32aee8d039.png",
     "index.html": "/brazilian-guitar-academy/index.html",
-    "main.fdd73b44.css.map": "/brazilian-guitar-academy/static/css/main.fdd73b44.css.map",
-    "main.02a37c60.js.map": "/brazilian-guitar-academy/static/js/main.02a37c60.js.map"
+    "main.d634aec0.css.map": "/brazilian-guitar-academy/static/css/main.d634aec0.css.map",
+    "main.d6cb751e.js.map": "/brazilian-guitar-academy/static/js/main.d6cb751e.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdd73b44.css",
-    "static/js/main.02a37c60.js"
+    "static/css/main.d634aec0.css",
+    "static/js/main.d6cb751e.js"
   ]
 }
