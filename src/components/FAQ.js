@@ -18,13 +18,13 @@ export default function FAQ() {
           <div className='item'>
             <div className='title'>
               {item.question}
-              <span onClick={() => handleToggle(i)}>
-                {selected === i ? "+" : "-"}
+              <span onClick={() => handleToggle(i)} className={selected === i ? "pointer rotate" : "pointer"}>
+                V
               </span>
             </div>
             <div
-              className='content'
-              style={{ display: selected === i ? "block" : "none" }}
+              className={selected === i ? "content show" : "content" }
+              // style={{ display: selected === i ? "block" : "none" }}
             >
               {item.answer}
             </div>
