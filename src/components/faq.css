@@ -1,6 +1,3 @@
-/* .wrapper {
-  display: flex;
-} */
 .accordion {
   margin-left: auto;
   margin-right: auto;
@@ -19,31 +16,33 @@
   padding: 0.5em 1em 0.5em 1em;
   color: rgb(37, 43, 51);
   overflow: hidden;
+  cursor: pointer;
 }
 .title span {
   cursor: pointer;
 }
 
 .content {
-  /* display: none; */
   overflow: hidden;
   padding: 0em 1em 0em 1em;
   max-height: 0;
-  transition: all 5s 0s;
+  transition: 1s -0.25s;
 }
 
-.show {
-  /* display: block; */
+.content.show {
   height: auto;
   max-height: 50px;
-  /* transition: all 5s; */
+  transition: 1s;
 }
 
 .pointer {
-  transition: .15s;
+  transition: 0.35s;
+  display: flex;
+  flex-direction: column;
 }
 
 .rotate {
-  transition: 0.15s;
+  transition: 0.35s;
   transform: rotate(180deg);
+  /* transform-origin: 50% 48%; */
 }
