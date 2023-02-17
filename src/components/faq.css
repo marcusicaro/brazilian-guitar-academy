@@ -18,6 +18,9 @@
   gap: 15px;
 }
 .title {
+  z-index: 1;
+  position: relative;
+  background: white;
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
@@ -32,13 +35,20 @@
 }
 
 .content {
+  position: relative;
+  margin-top: -6px;
   overflow: hidden;
   padding: 0em 1em 0em 1em;
   max-height: 0;
   transition: 1s -0.25s;
+  border-radius: 5px;
+  border-bottom: 2px solid rgba(192, 192, 192, 0.452);
+  border-left: 2px solid rgba(192, 192, 192, 0.452);
+  border-right: 2px solid rgba(192, 192, 192, 0.452);
 }
 
 .content.show {
+  padding: 1em;
   height: auto;
   max-height: 50px;
   transition: 1s;

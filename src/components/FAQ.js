@@ -10,15 +10,14 @@ import "./faq.css";
 export default function FAQ() {
   const [selected, setSelected] = useState(null);
   const [faqListStatus, setFaqListStatus] = useState(
-    faqData.map((item, i) => ({
-      index: i,
-      visibility: false,
-    }))
+    faqData.map(item => "content")
   );
 
-  function handleToggle(i) {
-    selected === i ? setSelected(null) : setSelected(i);
-  }
+    function handleToggle (i) {
+      let faqCopy = [...faqListStatus];
+      faqCopy[i] === 'content' ?  faqCopy[i] = 'content show' : faqCopy[i] = 'content' ;
+      setFaqListStatus(faqCopy);
+    }
 
   return (
     <div className='wrapper'>
@@ -55,14 +54,11 @@ export default function FAQ() {
             <div className='item'>
               <div className='title' onClick={() => handleToggle(i)}>
                 {item.question}
-                <span className={selected === i ? "pointer rotate" : "pointer"}>
+                <span className={faqListStatus[i] !== 'content' ? "pointer rotate" : "pointer"}>
                   <FontAwesomeIcon icon={faAngleDoubleDown} />
                 </span>
               </div>
-              <div
-                className={selected === i ? "content show" : "content"}
-                // style={{ display: selected === i ? "block" : "none" }}
-              >
+              <div className={faqListStatus[i]}>
                 {item.answer}
               </div>
             </div>
