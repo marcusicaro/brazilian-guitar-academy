@@ -5,7 +5,8 @@ const faqData = [
   },
   {
     question: "second question",
-    answer: "first answer lorem ipsum sajk hkjas hja shkj ashkjs hjaskhas kjh",
+    answer:
+      "first answer lorem ipsum sajk hkjas hja shkj ashkjs hjaskhas kjh asdasdas sadas das das das das dasd asdhsg dhjgas hjdghjsagdhjgas hjgshaj dghjsdg",
   },
   {
     question: "third question",
