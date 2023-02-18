@@ -3,7 +3,12 @@
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
+  color: rgb(37, 43, 51);
 }
+
+/* .faqSection button {
+  color: #2ea44f;
+} */
 
 .app {
   /* font-family: sans-serif; */
@@ -12,8 +17,9 @@
 }
 
 .item {
-  margin: 2em;
+  margin: 1em;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .itemBtn {
@@ -25,13 +31,13 @@
   padding: 1rem;
   font-size: 1rem;
   text-align: left;
-  color: #007bff;
   background-color: transparent;
   border: none;
 }
 
 .itemBtn:hover {
   background-color: #f3f3f3;
+  color: #2ea44f;
 }
 
 .itemBtnExpanded {

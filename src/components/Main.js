@@ -13,7 +13,7 @@ export default function Main() {
       <Cards />
       {/* <LatestLessons /> */}
       <Form />
-      <FAQ />
+      {/* <FAQ /> */}
       <FAQ2 />
     </div>
   );

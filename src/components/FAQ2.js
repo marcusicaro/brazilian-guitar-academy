@@ -36,8 +36,8 @@ export default function FAQ2() {
   return (
     <div className={styles.faqSection}>
       <div className={styles.app}>
-        <Accordion transition transitionTimeout={200}>
-          <AccordionItem header='What is Lorem Ipsum?' initialEntered>
+        <Accordion transition transitionTimeout={200} allowMultiple>
+          <AccordionItem header='What is Lorem Ipsum?'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
             das d as das das as as das das das das ddasdasdas dsa das dasdasdsad
