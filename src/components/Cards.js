@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faCoffee, faUserClock } from "@fortawesome/free-solid-svg-icons";
 
 const AdvantageCardsContainer = styled.div`
   min-height: 70vh;
@@ -56,7 +56,7 @@ export default function About() {
           whileInView={{ opacity: 1 }}
           className='advantageCard'
         >
-          <FontAwesomeIcon icon={faCoffee} className='cardIcon' />
+          <FontAwesomeIcon icon={faClockFour} className='cardIcon' />
           <AdvantageCardTitle>Advantage One</AdvantageCardTitle>
           <CardDescription>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
