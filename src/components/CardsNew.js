@@ -30,7 +30,7 @@ export default function CardsNew() {
 
    <div class="card">
       
-         <div class="icon"><i class="material-icons md-36"><FontAwesomeIcon icon={faClock} style={{fontSize:"30px"}}/></i></div>
+         <div class="icon"><i><FontAwesomeIcon icon={faClock} style={{fontSize:"30px"}} className="iconNew"/></i></div>
          <p class="newCardstitle">Contacts</p>
          <p class="text">Add or change your contacts and links.</p>
       

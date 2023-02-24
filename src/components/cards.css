@@ -24,7 +24,7 @@
     width: 100%;
     height: 80px;
     max-width:80px;
-    background: linear-gradient(90deg, #65a14d 0%, #2ea44f 40%, rgba(255, 255, 255, 0.28) 60%);
+    background: linear-gradient(90deg, #65a14d 0%, #2ea44f 40%, rgba(0, 0, 0, 0.28) 60%);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@
     margin: 0;
     text-align: center;
     margin-top: 30px;
-    color: white;
+    color: #252b33;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -52,7 +52,7 @@
     font-size: 13px;
     text-align: center;
     margin-top: 20px;
-    color: white;
+    color: #252b33;
     font-weight: 200;
     letter-spacing: 2px;
     opacity: 0;
@@ -81,6 +81,7 @@
  
  .card:hover .icon i {
     background: linear-gradient(90deg, #65a14d, #2ea44f);
+    color: #2ea44f;
     -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
     opacity: 1;
