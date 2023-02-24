@@ -5,6 +5,7 @@ import Cards from "./Cards";
 import Form from "./Form";
 import FAQ from "./FAQ";
 import FAQ2 from "./FAQ2";
+import CardsNew from "./CardsNew";
 
 export default function Main() {
   return (
@@ -14,7 +15,9 @@ export default function Main() {
       {/* <LatestLessons /> */}
       <Form />
       {/* <FAQ /> */}
+
       <FAQ2 />
+      <CardsNew />
     </div>
   );
 }
