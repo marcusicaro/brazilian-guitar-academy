@@ -6,6 +6,7 @@ import Form from "./Form";
 import FAQ from "./FAQ";
 import FAQ2 from "./FAQ2";
 import CardsNew from "./CardsNew";
+import Testimonials from "./Testimonials";
 
 export default function Main() {
   return (
@@ -17,7 +18,8 @@ export default function Main() {
       {/* <FAQ /> */}
 
       <FAQ2 />
-      <CardsNew />
+      <Testimonials />
+      {/* <CardsNew /> */}
     </div>
   );
 }
