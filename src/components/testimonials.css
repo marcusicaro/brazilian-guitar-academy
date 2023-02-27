@@ -1,0 +1,24 @@
+.sliderContainer {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.testimonyImage {
+    /* border-radius: 50px; */
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+.testimonyContainer {
+    /* width: 100vh; */
+    display: flex;
+    justify-content: center;
+}
+
+.testimonySLider {
+    display: flex;
+    justify-content: center;
+}

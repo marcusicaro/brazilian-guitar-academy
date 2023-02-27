@@ -2,6 +2,8 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import './testimonials.css'
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/swiper-bundle.css";
@@ -11,8 +13,9 @@ import "swiper/css/scrollbar";
 
 export default function Testimonials() {
   return (
+    <div className="sliderContainer">
+
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
@@ -22,11 +25,20 @@ export default function Testimonials() {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
     >
-      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide className="testimonySLider">
+        <div className="testimonyContainer">
+          <img src={require("./images/dani1.png")} className="testimonyImage"/>
+
+        </div>
+
+      </SwiperSlide>
       <SwiperSlide>Slide 2</SwiperSlide>
       <SwiperSlide>Slide 3</SwiperSlide>
       <SwiperSlide>Slide 4</SwiperSlide>
       ...
     </Swiper>
+
+    </div>
+
   );
 }
