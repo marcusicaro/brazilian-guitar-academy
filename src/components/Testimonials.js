@@ -5,11 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import './testimonials.css'
 
 // Import Swiper styles
-import "swiper/css";
+// import "swiper/css";
 import "swiper/swiper-bundle.css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import "swiper/css/scrollbar";
 
 export default function Testimonials() {
   return (
@@ -28,6 +28,9 @@ export default function Testimonials() {
       <SwiperSlide className="testimonySLider">
         <div className="testimonyContainer">
           <img src={require("./images/dani1.png")} className="testimonyImage"/>
+
+          <p>Testimony. Some words would fit here lorem ipsum something something something.</p>
+          <h3>Name</h3>
 
         </div>
 

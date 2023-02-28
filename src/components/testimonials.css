@@ -1,3 +1,16 @@
+:root {
+    --swiper-theme-color: #000;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: black !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000 !important;
+}
+
 .sliderContainer {
     height: 50vh;
     display: flex;
@@ -6,16 +19,27 @@
 
 .testimonyImage {
     /* border-radius: 50px; */
-    height: 50px;
+    height: 100px;
+    width: 100px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 25px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    background-color: white;
 }
 
 .testimonyContainer {
     /* width: 100vh; */
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    height: 350px;
+    background-color: green;
+}
+
+.testimonyContainer p {
+    margin-bottom: 35px;
 }
 
 .testimonySLider {
