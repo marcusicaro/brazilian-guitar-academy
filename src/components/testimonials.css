@@ -1,48 +1,54 @@
-:root {
-    --swiper-theme-color: #000;
-}
-
 .swiper-button-next,
-.swiper-button-prev{
-    color: black !important;
+.swiper-button-prev {
+  color: black !important;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #000 !important;
+  background-color: #000 !important;
 }
 
 .sliderContainer {
-    height: 50vh;
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  background-image: url(./images/sitedani6-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .testimonyImage {
-    /* border-radius: 50px; */
-    height: 100px;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    background-color: white;
+  /* border-radius: 50px; */
+  height: 100px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.swiper-slide {
+  width: 500px !important;
+  border: 1px solid silver;
 }
 
 .testimonyContainer {
-    /* width: 100vh; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    background-color: green;
+  /* width: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
 }
 
 .testimonyContainer p {
-    margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .testimonySLider {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.mySwiper {
+  max-width: 750px;
 }

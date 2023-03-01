@@ -17,13 +17,20 @@
   /* border-top: 1px solid #ccc; */
 }
 
+/* .faqTitle {
+  font-weight: bold !important;
+  color: #2ea44f !important;
+} */
+
 .item {
   margin: 1em;
   border: 1px solid #ccc;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .itemBtn {
+  font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;

@@ -1,47 +1,102 @@
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import {
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+} from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import './testimonials.css'
+import "./testimonials.css";
 
 // Import Swiper styles
-// import "swiper/css";
-import "swiper/swiper-bundle.css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "swiper/css/scrollbar";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
 export default function Testimonials() {
   return (
-    <div className="sliderContainer">
+    <div className='sliderContainer'>
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        modules={[EffectCoverflow, Pagination]}
+        className='mySwiper'
+      >
+        <SwiperSlide className='testimonySLider'>
+          <div className='testimonyContainer'>
+            <img
+              src={require("./images/dani1.png")}
+              className='testimonyImage'
+              alt='name of the first testimony'
+            />
 
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-    >
-      <SwiperSlide className="testimonySLider">
-        <div className="testimonyContainer">
-          <img src={require("./images/dani1.png")} className="testimonyImage"/>
+            <p>
+              Testimony. Some words would fit here lorem ipsum something
+              something something.
+            </p>
+            <h3>Name</h3>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='testimonyContainer'>
+            <img
+              src={require("./images/dani1.png")}
+              className='testimonyImage'
+              alt='name of the first testimony'
+            />
 
-          <p>Testimony. Some words would fit here lorem ipsum something something something.</p>
-          <h3>Name</h3>
+            <p>
+              Testimony. Some words would fit here lorem ipsum something
+              something something.
+            </p>
+            <h3>Name</h3>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='testimonyContainer'>
+            <img
+              src={require("./images/dani1.png")}
+              className='testimonyImage'
+              alt='name of the first testimony'
+            />
 
-        </div>
+            <p>
+              Testimony. Some words would fit here lorem ipsum something
+              something something.
+            </p>
+            <h3>Name</h3>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='testimonyContainer'>
+            <img
+              src={require("./images/dani1.png")}
+              className='testimonyImage'
+              alt='name of the first testimony'
+            />
 
-      </SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      ...
-    </Swiper>
-
+            <p>
+              Testimony. Some words would fit here lorem ipsum something
+              something something.
+            </p>
+            <h3>Name</h3>
+          </div>
+        </SwiperSlide>
+        ...
+      </Swiper>
     </div>
-
   );
 }
