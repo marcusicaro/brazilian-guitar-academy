@@ -1,8 +1,3 @@
-.swiper-button-next,
-.swiper-button-prev {
-  color: black !important;
-}
-
 .swiper-pagination-bullet-active {
   background-color: #000 !important;
 }
@@ -27,12 +22,10 @@
 }
 
 .swiper-slide {
-  width: 500px !important;
-  border: 1px solid silver;
+  background-color: #f8f9fa;
 }
 
 .testimonyContainer {
-  /* width: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,8 +40,4 @@
 .testimonySLider {
   display: flex;
   justify-content: center;
-}
-
-.mySwiper {
-  max-width: 750px;
 }

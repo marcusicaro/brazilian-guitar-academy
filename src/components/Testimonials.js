@@ -14,25 +14,28 @@ import "./testimonials.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export default function Testimonials() {
   return (
     <div className='sliderContainer'>
       <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        navigation={true}
+        pagination={true}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
+        loop={true}
         coverflowEffect={{
-          rotate: 50,
+          rotate: 0,
           stretch: 0,
-          depth: 100,
-          modifier: 1,
+          depth: 0,
+          modifier: 0,
           slideShadows: true,
         }}
-        pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        modules={[EffectCoverflow, Pagination]}
         className='mySwiper'
       >
         <SwiperSlide className='testimonySLider'>
@@ -95,7 +98,6 @@ export default function Testimonials() {
             <h3>Name</h3>
           </div>
         </SwiperSlide>
-        ...
       </Swiper>
     </div>
   );
