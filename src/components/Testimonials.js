@@ -46,11 +46,13 @@ export default function Testimonials() {
               alt='name of the first testimony'
             />
 
-            <p className="testimonialText">
-              Testimony. Some words would fit here lorem ipsum something
-              something something.
+            <p className='testimonialText'>
+              <i>
+                Testimony. Some words would fit here lorem ipsum something
+                something something.
+              </i>
             </p>
-            <p className="testimonialName">Name</p>
+            <p className='testimonialName'>Name</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className='testimonySLider'>
@@ -61,11 +63,13 @@ export default function Testimonials() {
               alt='name of the first testimony'
             />
 
-            <p className="testimonialText">
-              Testimony. Some words would fit here lorem ipsum something
-              something something.
+            <p className='testimonialText'>
+              <i>
+                Testimony. Some words would fit here lorem ipsum something
+                something something.
+              </i>
             </p>
-            <p className="testimonialName">Name</p>
+            <p className='testimonialName'>Name</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className='testimonySLider'>
@@ -76,11 +80,13 @@ export default function Testimonials() {
               alt='name of the first testimony'
             />
 
-            <p className="testimonialText">
-              Testimony. Some words would fit here lorem ipsum something
-              something something.
+            <p className='testimonialText'>
+              <i>
+                Testimony. Some words would fit here lorem ipsum something
+                something something.
+              </i>
             </p>
-            <p className="testimonialName">Name</p>
+            <p className='testimonialName'>Name</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className='testimonySLider'>
@@ -91,11 +97,13 @@ export default function Testimonials() {
               alt='name of the first testimony'
             />
 
-            <p className="testimonialText">
-              Testimony. Some words would fit here lorem ipsum something
-              something something.
+            <p className='testimonialText'>
+              <i>
+                Testimony. Some words would fit here lorem ipsum something
+                something something.
+              </i>
             </p>
-            <p className="testimonialName">Name</p>
+            <p className='testimonialName'>Name</p>
           </div>
         </SwiperSlide>
         <SwiperSlide className='testimonySLider'>
@@ -106,14 +114,15 @@ export default function Testimonials() {
               alt='name of the first testimony'
             />
 
-            <p className="testimonialText">
-              Testimony. Some words would fit here lorem ipsum something
-              something something.
+            <p className='testimonialText'>
+              <i>
+                Testimony. Some words would fit here lorem ipsum something
+                something something.
+              </i>
             </p>
-            <p className="testimonialName">Name</p>
+            <p className='testimonialName'>Name</p>
           </div>
         </SwiperSlide>
-
       </Swiper>
     </div>
   );

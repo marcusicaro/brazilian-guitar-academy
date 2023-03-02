@@ -47,3 +47,25 @@
   max-width: 650px;
   font-size: 20px;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1 !important;
+  transition: 0.3s;
+}
+
+.swiper-wrapper:hover + .swiper-button-prev {
+  opacity: 1 !important;
+  transition: 0.3s;
+}
+
+.swiper-wrapper:hover ~ .swiper-button-next {
+  opacity: 1 !important;
+  transition: 0.3s;
+}
