@@ -46,14 +46,14 @@ export default function Testimonials() {
               alt='name of the first testimony'
             />
 
-            <p>
+            <p className="testimonialText">
               Testimony. Some words would fit here lorem ipsum something
               something something.
             </p>
-            <h3>Name</h3>
+            <p className="testimonialName">Name</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='testimonySLider'>
           <div className='testimonyContainer'>
             <img
               src={require("./images/dani1.png")}
@@ -61,14 +61,14 @@ export default function Testimonials() {
               alt='name of the first testimony'
             />
 
-            <p>
+            <p className="testimonialText">
               Testimony. Some words would fit here lorem ipsum something
               something something.
             </p>
-            <h3>Name</h3>
+            <p className="testimonialName">Name</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='testimonySLider'>
           <div className='testimonyContainer'>
             <img
               src={require("./images/dani1.png")}
@@ -76,14 +76,14 @@ export default function Testimonials() {
               alt='name of the first testimony'
             />
 
-            <p>
+            <p className="testimonialText">
               Testimony. Some words would fit here lorem ipsum something
               something something.
             </p>
-            <h3>Name</h3>
+            <p className="testimonialName">Name</p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='testimonySLider'>
           <div className='testimonyContainer'>
             <img
               src={require("./images/dani1.png")}
@@ -91,13 +91,29 @@ export default function Testimonials() {
               alt='name of the first testimony'
             />
 
-            <p>
+            <p className="testimonialText">
               Testimony. Some words would fit here lorem ipsum something
               something something.
             </p>
-            <h3>Name</h3>
+            <p className="testimonialName">Name</p>
           </div>
         </SwiperSlide>
+        <SwiperSlide className='testimonySLider'>
+          <div className='testimonyContainer'>
+            <img
+              src={require("./images/dani1.png")}
+              className='testimonyImage'
+              alt='name of the first testimony'
+            />
+
+            <p className="testimonialText">
+              Testimony. Some words would fit here lorem ipsum something
+              something something.
+            </p>
+            <p className="testimonialName">Name</p>
+          </div>
+        </SwiperSlide>
+
       </Swiper>
     </div>
   );

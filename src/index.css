@@ -68,7 +68,13 @@
   filter: brightness(83%);
 }
 
-/* n confiar codepen */
+/* .signUp {
+
+} */
+
+/* botão */
+
+
 
 @keyframes pop-word {
   to {
@@ -371,9 +377,9 @@
     object-fit: contain;
     margin-left: -370px;
   }
-  .heroTitle {
-    font-size: 35px;
-  }
+  /* .heroTitle {
+    font-size: 45px;
+  } */
 
   .heroSubtitle {
     font-size: 20px;

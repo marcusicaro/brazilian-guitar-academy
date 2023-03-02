@@ -47,6 +47,54 @@ export default function FAQ() {
           >
             Q
           </motion.h2>
+          <motion.h2
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+            className='faqTitle'
+          >
+            Q
+          </motion.h2>
+          <motion.h2
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+            className='faqTitle'
+          >
+            Q
+          </motion.h2>
+          <motion.h2
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+            className='faqTitle'
+          >
+            Q
+          </motion.h2>
+          <motion.h2
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+            className='faqTitle'
+          >
+            Q
+          </motion.h2>
+          <motion.h2
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+            className='faqTitle'
+          >
+            Q
+          </motion.h2>
+          <motion.h2
+            initial={{ x: -100 }}
+            whileInView={{ x: 0 }}
+            transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+            className='faqTitle'
+          >
+            Q
+          </motion.h2>
         </div>
 
         <div className='accordion'>
