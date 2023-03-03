@@ -16,9 +16,9 @@ export default function Main() {
       {/* <LatestLessons /> */}
       <Form />
       {/* <FAQ /> */}
-
-      <FAQ2 />
       <Testimonials />
+      <FAQ2 />
+
       {/* <CardsNew /> */}
     </div>
   );

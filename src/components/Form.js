@@ -14,6 +14,7 @@ export default function Form() {
             initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             transition={{ type: "spring", duration: 1, bounce: 0.3 }}
+            viewport={{ once: true }}
           >
             Contact <span className='green'>Us</span>
           </motion.legend>

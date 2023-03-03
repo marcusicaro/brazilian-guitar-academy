@@ -55,6 +55,7 @@ export default function About() {
           initial={{ opacity: 0.0 }}
           transition={{ ease: "easeOut", duration: 1.5 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className='advantageCard'
         >
           <FontAwesomeIcon icon={faClock} className='cardIcon' />
@@ -69,6 +70,7 @@ export default function About() {
           initial={{ opacity: 0.0 }}
           transition={{ ease: "easeOut", duration: 1.5 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className='advantageCard'
         >
           <FontAwesomeIcon icon={faCoffee} className='cardIcon' />
@@ -83,6 +85,7 @@ export default function About() {
           initial={{ opacity: 0.0 }}
           transition={{ ease: "easeOut", duration: 1.5 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className='advantageCard'
         >
           <FontAwesomeIcon icon={faCoffee} className='cardIcon' />
@@ -97,6 +100,7 @@ export default function About() {
           initial={{ opacity: 0.0 }}
           transition={{ ease: "easeOut", duration: 1.5 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className='advantageCard'
         >
           <FontAwesomeIcon icon={faCoffee} className='cardIcon' />
@@ -111,6 +115,7 @@ export default function About() {
           initial={{ opacity: 0.0 }}
           transition={{ ease: "easeOut", duration: 1.5 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className='advantageCard'
         >
           <FontAwesomeIcon icon={faCoffee} className='cardIcon' />
@@ -125,6 +130,7 @@ export default function About() {
           initial={{ opacity: 0.0 }}
           transition={{ ease: "easeOut", duration: 1.5 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className='advantageCard'
         >
           <FontAwesomeIcon icon={faCoffee} className='cardIcon' />

@@ -1,6 +1,7 @@
 .faqSection {
   /* display: flex; */
   margin-top: 50px;
+  margin-bottom: 50px;
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
