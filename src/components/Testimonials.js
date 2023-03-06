@@ -37,7 +37,7 @@ export default function Testimonials() {
           modifier: 0,
           slideShadows: true,
         }}
-        autoplay = {{
+        autoplay={{
           delay: 5000,
         }}
         scrollbar={{ draggable: true }}

@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 import "./form.css";
 
-
-
 export default function Form() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_fagbcfr",
+        "template_sxgk76p",
+        form.current,
+        "xLf0Nv4ajbskzMIOg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className='formContainer'>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <fieldset className='formField'>
           <motion.legend
             initial={{ x: -100 }}
@@ -19,11 +39,23 @@ export default function Form() {
             Contact <span className='green'>Us</span>
           </motion.legend>
           <div className='formFieldContainer'>
-            <input id='name' className='formTalk' type='text' required />
+            <input
+              id='name'
+              className='formTalk'
+              name='user_name'
+              type='text'
+              required
+            />
             <label htmlFor='name'>Name:</label>
           </div>
           <div className='formFieldContainer'>
-            <input id='email' className='formEmail' type='email' required />
+            <input
+              id='email'
+              className='formEmail'
+              name='user_email'
+              type='email'
+              required
+            />
             <label htmlFor='email'>E-mail:</label>
           </div>
           <div className='formFieldContainer message'>
@@ -31,10 +63,13 @@ export default function Form() {
               id='message'
               className='formText'
               placeholder='Write a message...'
+              name='message'
               required
             />
           </div>
-          <button className='submitButton'>Submit</button>
+          <button className='submitButton' value='Submit'>
+            Submit
+          </button>
         </fieldset>
       </form>
     </div>

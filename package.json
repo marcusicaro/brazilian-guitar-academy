@@ -4,6 +4,7 @@
   "homepage": "https://marcusicaro.github.io/brazilian-guitar-academy",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
@@ -11,6 +12,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@szhsin/react-accordion": "^1.2.0",
     "cra-template": "1.2.0",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^9.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

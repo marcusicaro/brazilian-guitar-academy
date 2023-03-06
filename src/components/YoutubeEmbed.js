@@ -11,13 +11,9 @@ const YoutubeEmbed = () => (
       src={`https://www.youtube.com/embed/7Y9S90kbdfo`}
       allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
       allowFullScreen
-      title='Embedded youtube'
+      title="Rocho's introduction"
     />
   </div>
 );
-
-YoutubeEmbed.propTypes = {
-  embedId: PropTypes.string.isRequired,
-};
 
 export default YoutubeEmbed;
