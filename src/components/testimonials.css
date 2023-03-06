@@ -69,3 +69,7 @@
   opacity: 1 !important;
   transition: 0.3s;
 }
+
+.swiper-pagination {
+  top: 300px !important;
+}

@@ -130,6 +130,7 @@
 .aboutContent {
   max-width: 1075px;
   padding-top: 1em;
+  padding-bottom: 1em;
   display: flex;
   height: auto;
 }

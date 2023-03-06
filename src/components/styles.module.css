@@ -1,7 +1,7 @@
 .faqSection {
   /* display: flex; */
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 1em;
+  margin-bottom: 1em;
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;

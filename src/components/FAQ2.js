@@ -38,7 +38,8 @@ export default function FAQ2() {
     <div className={styles.faqSection}>
       <div className={styles.app}>
         <Accordion transition transitionTimeout={200} allowMultiple>
-          <motion.div           initial={{ opacity: 0.0 }}
+          <motion.div           
+          initial={{ opacity: 0.0 }}
           transition={{ ease: "easeOut", duration: 1.5 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

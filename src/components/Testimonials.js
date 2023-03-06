@@ -1,4 +1,5 @@
 import {
+  Autoplay,
   EffectCoverflow,
   Navigation,
   Pagination,
@@ -20,9 +21,10 @@ export default function Testimonials() {
   return (
     <div className='sliderContainer'>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
         navigation={true}
         pagination={true}
+        speed={1500}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -34,6 +36,9 @@ export default function Testimonials() {
           depth: 0,
           modifier: 0,
           slideShadows: true,
+        }}
+        autoplay = {{
+          delay: 5000,
         }}
         scrollbar={{ draggable: true }}
         className='mySwiper'
