@@ -38,7 +38,7 @@ export default function About() {
               learn more
             </button>
           </div>
-          <div>
+          <div className="introVideoContainer">
             <YoutubeEmbed />
           </div>
         </div>
