@@ -28,13 +28,20 @@ export default function Form() {
   };
   return (
     <div className='formContainer'>
-      <form ref={form} onSubmit={sendEmail}>
+      <motion.form
+        ref={form}
+        initial={{ opacity: 0.0 }}
+        transition={{ ease: "easeOut", duration: 1.5 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+      >
         <fieldset className='formField'>
           <motion.legend
             initial={{ x: -100 }}
             whileInView={{ x: 0 }}
             transition={{ type: "spring", duration: 1, bounce: 0.3 }}
             viewport={{ once: true }}
+            variants={{ delayChildren: 50 }}
           >
             Contact <span className='green'>Us</span>
           </motion.legend>
@@ -71,7 +78,7 @@ export default function Form() {
             Submit
           </button>
         </fieldset>
-      </form>
+      </motion.form>
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function About() {
     <div className='aboutContainer'>
       <h2 className='titleAbout'>
         <span className='word'>About</span>
-        <span className='word'>Us</span>
+        <span className='word usTitle'>Us</span>
       </h2>
       <div className='aboutContent'>
         <div className='insideBox'>
@@ -38,7 +38,7 @@ export default function About() {
               learn more
             </button>
           </div>
-          <div className="introVideoContainer">
+          <div className='introVideoContainer'>
             <YoutubeEmbed />
           </div>
         </div>

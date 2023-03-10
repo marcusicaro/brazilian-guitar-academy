@@ -38,222 +38,237 @@ export default function FAQ2() {
     <div className={styles.faqSection}>
       <div className={styles.app}>
         <Accordion transition transitionTimeout={200} allowMultiple>
-          <motion.div           
-          initial={{ opacity: 0.0 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          >          
-              <AccordionItem
+          <motion.div
+            initial={{ opacity: 0.0 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <AccordionItem
               header='What is Lorem Ipsum?'
               className={styles.faqTitle}
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
-                das d as das das as as das das das das ddasdasdas dsa das
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                asdas das d as das das as as das das das das ddasdasdas dsa das
                 dasdasdsad as dasd as Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. asdas das d as das das as as das das das das
-                ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                dolore magna aliqua. asdas das d as das das as as das das das
+                das ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. asdas das d as das
-                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd as
+                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd
+                as
               </p>
             </AccordionItem>
           </motion.div>
 
-          <motion.div           initial={{ opacity: 0.0 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          >          
-              <AccordionItem
+          <motion.div
+            initial={{ opacity: 0.0 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <AccordionItem
               header='What is Lorem Ipsum?'
               className={styles.faqTitle}
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
-                das d as das das as as das das das das ddasdasdas dsa das
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                asdas das d as das das as as das das das das ddasdasdas dsa das
                 dasdasdsad as dasd as Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. asdas das d as das das as as das das das das
-                ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                dolore magna aliqua. asdas das d as das das as as das das das
+                das ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. asdas das d as das
-                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd as
+                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd
+                as
               </p>
             </AccordionItem>
           </motion.div>
 
-          <motion.div           initial={{ opacity: 0.0 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          >          
-              <AccordionItem
+          <motion.div
+            initial={{ opacity: 0.0 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <AccordionItem
               header='What is Lorem Ipsum?'
               className={styles.faqTitle}
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
-                das d as das das as as das das das das ddasdasdas dsa das
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                asdas das d as das das as as das das das das ddasdasdas dsa das
                 dasdasdsad as dasd as Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. asdas das d as das das as as das das das das
-                ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                dolore magna aliqua. asdas das d as das das as as das das das
+                das ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. asdas das d as das
-                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd as
+                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd
+                as
               </p>
             </AccordionItem>
           </motion.div>
 
-          <motion.div           initial={{ opacity: 0.0 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          >          
-              <AccordionItem
+          <motion.div
+            initial={{ opacity: 0.0 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <AccordionItem
               header='What is Lorem Ipsum?'
               className={styles.faqTitle}
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
-                das d as das das as as das das das das ddasdasdas dsa das
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                asdas das d as das das as as das das das das ddasdasdas dsa das
                 dasdasdsad as dasd as Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. asdas das d as das das as as das das das das
-                ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                dolore magna aliqua. asdas das d as das das as as das das das
+                das ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. asdas das d as das
-                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd as
+                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd
+                as
               </p>
             </AccordionItem>
           </motion.div>
 
-          <motion.div           initial={{ opacity: 0.0 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          >          
-              <AccordionItem
+          <motion.div
+            initial={{ opacity: 0.0 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <AccordionItem
               header='What is Lorem Ipsum?'
               className={styles.faqTitle}
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
-                das d as das das as as das das das das ddasdasdas dsa das
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                asdas das d as das das as as das das das das ddasdasdas dsa das
                 dasdasdsad as dasd as Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. asdas das d as das das as as das das das das
-                ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                dolore magna aliqua. asdas das d as das das as as das das das
+                das ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. asdas das d as das
-                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd as
+                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd
+                as
               </p>
             </AccordionItem>
           </motion.div>
 
-          <motion.div           initial={{ opacity: 0.0 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          >          
-              <AccordionItem
+          <motion.div
+            initial={{ opacity: 0.0 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <AccordionItem
               header='What is Lorem Ipsum?'
               className={styles.faqTitle}
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
-                das d as das das as as das das das das ddasdasdas dsa das
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                asdas das d as das das as as das das das das ddasdasdas dsa das
                 dasdasdsad as dasd as Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. asdas das d as das das as as das das das das
-                ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                dolore magna aliqua. asdas das d as das das as as das das das
+                das ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. asdas das d as das
-                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd as
+                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd
+                as
               </p>
             </AccordionItem>
           </motion.div>
 
-          <motion.div           initial={{ opacity: 0.0 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          >          
-              <AccordionItem
+          <motion.div
+            initial={{ opacity: 0.0 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <AccordionItem
               header='What is Lorem Ipsum?'
               className={styles.faqTitle}
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
-                das d as das das as as das das das das ddasdasdas dsa das
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                asdas das d as das das as as das das das das ddasdasdas dsa das
                 dasdasdsad as dasd as Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. asdas das d as das das as as das das das das
-                ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                dolore magna aliqua. asdas das d as das das as as das das das
+                das ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. asdas das d as das
-                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd as
+                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd
+                as
               </p>
             </AccordionItem>
           </motion.div>
-          <motion.div           initial={{ opacity: 0.0 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          >          
-              <AccordionItem
+          <motion.div
+            initial={{ opacity: 0.0 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <AccordionItem
               header='What is Lorem Ipsum?'
               className={styles.faqTitle}
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
-                das d as das das as as das das das das ddasdasdas dsa das
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                asdas das d as das das as as das das das das ddasdasdas dsa das
                 dasdasdsad as dasd as Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. asdas das d as das das as as das das das das
-                ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                dolore magna aliqua. asdas das d as das das as as das das das
+                das ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. asdas das d as das
-                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd as
+                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd
+                as
               </p>
             </AccordionItem>
           </motion.div>
-          <motion.div           initial={{ opacity: 0.0 }}
-          transition={{ ease: "easeOut", duration: 1.5 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          >          
-              <AccordionItem
+          <motion.div
+            initial={{ opacity: 0.0 }}
+            transition={{ ease: "easeOut", duration: 1.5 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <AccordionItem
               header='What is Lorem Ipsum?'
               className={styles.faqTitle}
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. asdas
-                das d as das das as as das das das das ddasdasdas dsa das
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                asdas das d as das das as as das das das das ddasdasdas dsa das
                 dasdasdsad as dasd as Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. asdas das d as das das as as das das das das
-                ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                dolore magna aliqua. asdas das d as das das as as das das das
+                das ddasdasdas dsa das dasdasdsad as dasd as Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. asdas das d as das
-                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd as
+                das as as das das das das ddasdasdas dsa das dasdasdsad as dasd
+                as
               </p>
             </AccordionItem>
           </motion.div>
-
-
         </Accordion>
       </div>
     </div>
